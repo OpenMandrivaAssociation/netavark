@@ -13,6 +13,7 @@ BuildRequires: golang
 BuildRequires: go-md2man
 BuildRequires: rust
 BuildRequires: protobuf-compiler
+BuildRequires: cargo
 
 %description
 Netavark is a rust based network stack for containers. It is being designed to
