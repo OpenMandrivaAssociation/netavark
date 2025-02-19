@@ -47,3 +47,4 @@ EOF
 %dir %{_libexecdir}/podman
 %{_libexecdir}/podman/netavark
 %{_mandir}/man1/netavark.1*
+%{_mandir}/man7/netavark-firewalld.7*
