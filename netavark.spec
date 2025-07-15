@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name: netavark
-Version: 1.14.0
+Version: 1.15.2
 Release: 1
 Source0: https://github.com/containers/netavark/archive/refs/tags/v%{version}.tar.gz
 Source1: vendor.tar.xz
