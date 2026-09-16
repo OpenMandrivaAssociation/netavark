@@ -9,6 +9,7 @@ Summary: Container network stack
 URL: https://github.com/containers/netavark
 License: Apache-2.0
 Group: Servers
+BuildRequires: make
 BuildRequires: golang
 BuildRequires: go-md2man
 BuildRequires: rust
