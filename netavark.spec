@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name: netavark
-Version: 1.15.2
+Version: 2.1.0
 Release: 1
 Source0: https://github.com/containers/netavark/archive/refs/tags/v%{version}.tar.gz
 Source1: vendor.tar.xz
@@ -22,7 +22,7 @@ applications.
 
 %prep
 %autosetup -p1 -a 1
-mkdir .cargo
+mkdir -p .cargo
 cat >>.cargo/config.toml <<'EOF'
 
 [source.crates-io]
@@ -44,6 +44,7 @@ EOF
 %{_prefix}/lib/systemd/system/netavark-dhcp-proxy.service
 %{_prefix}/lib/systemd/system/netavark-dhcp-proxy.socket
 %{_prefix}/lib/systemd/system/netavark-firewalld-reload.service
+%{_prefix}/lib/systemd/system/netavark-nftables-reload.service
 %dir %{_libexecdir}/podman
 %{_libexecdir}/podman/netavark
 %{_mandir}/man1/netavark.1*
